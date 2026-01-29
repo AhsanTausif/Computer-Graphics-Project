@@ -8,7 +8,7 @@ When we move the camera to a "Follow" view, we calculate its position using:
  
 P_world = M_vehicle *  P_local 
  
-Where P_local$ is the offset (e.g. 8 units behind the car) and M_vehicle is the car's world matrix.
+Where P_local is the offset (e.g. 8 units behind the car) and M_vehicle is the car's world matrix.
 
 2. Camera Viewports
 
@@ -20,6 +20,6 @@ Side View: Useful for demonstrating the "profile" and wheel rotation.
 
 3. Linear Interpolation (Lerp)
 
-I used THREE.MathUtils.lerp for the speed. 
+This project used THREE.MathUtils.lerp for the speed. 
 
-This prevents the car from stopping instantly, giving it a sense of momentum, which is a nice "extra credit" touch for graphics assignments.
+This prevents the car from stopping instantly, giving it a sense of momentum.
